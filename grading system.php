@@ -1,7 +1,7 @@
 <?php
 
 // Grading system
-$n = 40;
+$n = 22;
 
 if($n >= 101){
     echo 'Some think wrong...!'; 
