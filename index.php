@@ -1,22 +1,9 @@
-<?php
+Fist Name is : <?php if(isset($_POST['fname'])) : ?> <?php endif ?>
+Last Name is : <?php if(isset($_POST['lname'])) : ?> <?php endif ?>
 
-// Grading system
-$n = 40;
+<form action="" method="POST">
+    <input name="fname" type="text" placeholder="First Name">
+    <input name="lname" type="text" placeholder="Last Name">
+    <button type="submit">Submit</button>
+</form>
 
-if($n >= 101){
-    echo 'Some think wrong...!'; 
-}elseif($n >= 80){
-    echo 'You are Grade point A+';
-} elseif($n >= 70){
-    echo 'You are Grade point A';
-} elseif($n >= 60){
-    echo 'You are Grade point A-';
-} elseif($n >= 50){
-    echo 'You are Grade point B';
-} elseif($n >= 40){
-    echo 'You are Grade point D';
-} elseif($n >= 33){
-    echo 'You are Grade point c';
-}elseif($n <= 32){
-    echo 'Sorry! You are Failed.';
-}
